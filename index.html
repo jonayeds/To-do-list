@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <!-- tailwind css and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- custom fonts -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Revolution&display=swap');
+    .font-protest{
+        font-family: "Protest Revolution", sans-serif;
+    }
+    .font-caveat{
+        font-family: "Caveat", cursive;
+    }
+    </style>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1e67654919.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="bg-gradient-to-br from-cyan-500 to-blue-500 text-white">
+    <section class="min-h-[100vh] py-10 flex justify-center items-center ">
+        <div class="max-w-max min-h-96 bg-gradient-to-br from-[#afacea] to-[#90b1e6] p-12 rounded-2xl shadow-2xl flex flex-col items-center gap-6">
+            <h1 class="text-5xl font-protest font-bold ">To Do List</h1>
+            <h1 class="text-4xl font-protest font-bold text-[#ffffffb1]" id="date"></h1>
+            <div class="mt-8 flex flex-col gap-5" id="parent" >
+                 <div class="flex items-center">
+                    <label for="" class="text-3xl font-caveat font-bold "><span id="num">1</span>.</label><input type="text" class="ml-3 text-[#ffffffa8] bg-transparent border-b-2 border-dashed focus:outline-none font-caveat text-3xl font-extralight border-[#21212122]"><div class="w-4 rounded-sm cursor-pointer h-4 border-solid border-[1px] border-white checker hidden flex justify-center items-center " ><i class="fa-solid fa-check text-[#151c45] hidden"></i></div><button onclick="newElement()" class="font-caveat text-5xl bg-[#ffffff2f] px-3 rounded-full ml-3 " id="addBtn">+</button>
+
+                 </div>               
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
